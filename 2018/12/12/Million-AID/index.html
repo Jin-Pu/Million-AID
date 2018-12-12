@@ -104,20 +104,25 @@
 
 
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="Million-AID: A Million Aerial Image Database for Scene Classification by Automatic Labeling IntroductionThe Million-AID dataset has 256×256 and 512×512 images, and its image resolution ranges from 0.5">
+<meta name="keywords" content="Remote Sensing; Deep Learning">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Million-AID">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/12/12/Million-AID/index.html">
 <meta property="og:site_name" content="Million-AID">
+<meta property="og:description" content="Million-AID: A Million Aerial Image Database for Scene Classification by Automatic Labeling IntroductionThe Million-AID dataset has 256×256 and 512×512 images, and its image resolution ranges from 0.5">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-12-12T15:23:13.640Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Million-AID">
+<meta name="twitter:description" content="Million-AID: A Million Aerial Image Database for Scene Classification by Automatic Labeling IntroductionThe Million-AID dataset has 256×256 and 512×512 images, and its image resolution ranges from 0.5">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/12/Million-AID/">
 
 
 
@@ -127,7 +132,7 @@
   };
 </script>
 
-  <title>Million-AID</title>
+  <title>Million-AID | Million-AID</title>
   
 
 
@@ -175,8 +180,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -217,7 +221,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -330,154 +334,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/12/Construction/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Pu Jin">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Million-AID">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/12/12/Construction/" class="post-title-link" itemprop="http://yoursite.com/index.html">The Construction of Million-AID Dataset</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2018-12-12 16:27:14 / Modified: 16:32:24" itemprop="dateCreated datePublished" datetime="2018-12-12T16:27:14+01:00">2018-12-12</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Points-data"><a href="#Points-data" class="headerlink" title="Points data"></a>Points data</h3><p>For scene categories with small footprints, such as “storage tank”, “wind turbine”, “pool”, etc., coordinate points are generally used to represent geographic location information of these scenes, and attached text contains semantic information. By retrieving the semantic information in the attached text, the coordinates of point data matching the retrieval category in a region can be acquired. Thereby the acquisition of the geographic information corresponding to the target category in the region will be completed. For accomplishing the process, we use Google Map Platform to create a JavaScript-based scene coordinates acquirer. The Radar Search API of Google Map Platform is able to search the geo-information labeling database in the area by input semantic information and return the coordinates of the points matching the input information. Based on Radar Search API in Google Map Platform, the scene coordinates acquirer has been created, which can switch the map area to achieve the large-area searching tasks and save the coordinates in a file in real time. The features of the acquirer improve the efficiencies of coordinates acquisitions. Fig.2 shows the coordinates of “baseball field” by red marks. Plenty of scenes coordinates are obtained by the acquirer, such as “baseball field”, “soccer field”, “church”, “tennis court”. </p>
-<h3 id="Lines-and-planes-data"><a href="#Lines-and-planes-data" class="headerlink" title="Lines and planes data"></a>Lines and planes data</h3><p>Some scene categories in the category hierarchy, such as business districts, cultivated land, rivers, etc., require an area to represent. A single point is not enough to describe the geometry and position information of these scenes. Lines and faces need to be used to accurately represent this scene information. In order to obtain the line and surface information of the scene category, we use the open map project, OpenStreetMap, to obtain the line and surface information of these scene categories. OpenStreetMap is an open online map project for free editing. OpenStreetMap consists of three elements, node, way, and relation. Node is the basic element that represents the geometric information of the scene. A single Node represents a point in space. It consists of longitude, dimension, and node id. node usually attaches a key, which represents the semantic information of node. Way is an ordered list of nodes, divided into open way, closed way, area, and so on. Each way contains at least one tag, and the tag contains the attachment semantic information of the way. Use way to represent geometric information for multiple scene categories. When using OpenStreetMap to extract the line and surface information of the scene category, we can directly extract the way data. The way data of the desired scene category is extracted by retrieving the semantic information of the tag.</p>
-<p>OpenStreetMap provides a data retrieval tool Osmosis. Use Osmosis to retrieve tag information and extract matching way data. Figure 4 shows the way data of a “commercial area” extracted from OpenStreetMap data (the way data is converted to KML data displayed in Google Earth), and Figure 5 shows the extracted “river” way data of the Yangtze River basin. It can be seen from the figure that the extracted way data information can be matched with the real remote sensing image, and the labeling accuracy is high and has great value.</p>
-<p>OpenStreetMap contains a large amount of data, a wide coverage, and relatively high precision. The tag information in OpenStreetMap is rich and varied, covering a large number of scenes of human production and life, and covering most scene categories in the category hierarchy. Thousands of way information can be obtained by using a data retrieval tool. This information is of great help to the acquisition of scene images. and position information. </p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -509,10 +368,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/12/12/Million-AID/" class="post-title-link" itemprop="http://yoursite.com/index.html">Million-AID</a>
+          <h1 class="post-title" itemprop="name headline">Million-AID
+
               
             
           </h1>
@@ -575,9 +432,7 @@
       
 
       
-        
-          
-            <p>Million-AID: A Million Aerial Image Database for Scene Classification by Automatic Labeling</p>
+        <p>Million-AID: A Million Aerial Image Database for Scene Classification by Automatic Labeling</p>
 <h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>The Million-AID dataset has 256×256 and 512×512 images, and its image resolution ranges from 0.5m-11.4m. It has three RGB spectra and is derived from multiple different remote sensing detectors. The images of the Million-AID dataset were all acquired using Google Earth. In order to make the data set more in line with the distribution of the scene in the real world, we get as much as possible global coordinate data of scene categories. In order to reflect the global distribution of images, we have calculated the geographic coordinates of all data blocks. Divide the world map into a large number of square areas, and count the number of data block coordinates falling in the square area. The following distribution map is obtained as shown in Figure 9.</p>
 <h3 id="The-global-distribution"><a href="#The-global-distribution" class="headerlink" title="The global distribution"></a>The global distribution</h3><p>From this histogram, it can be seen that the image resolution is mainly concentrated at 0.298m and 0.597m. This is because most of our scene categories require resolutions within 1m, so the image resolution is mainly concentrated on these two resolutions. Because different scene types need to be displayed with different resolutions, the data set contains multiple image resolutions, which also reflects the rich scene categories and large image diversity of our data set.</p>
 <h3 id="The-banchmark"><a href="#The-banchmark" class="headerlink" title="The banchmark"></a>The banchmark</h3><p>Here, we describe two subsets of the Million-AID database that serve as benchmarks. Million-AID-Standard and Million-AID-32.</p>
@@ -585,8 +440,6 @@
 <p><strong>Million-AID-32</strong> contains 32 scene categories common to NWPU and AID. Million-AID-32 is separated from Million-AID-Standard, each category contains 2000 images. Similarly, we separated the corresponding subset of 32 categories from NWPU and AID. These subsets are used to compare the image diversity between the three data sets and will be used in Section 4.3.</p>
 <p>Download here</p>
 
-          
-        
       
     </div>
 
@@ -607,14 +460,36 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/Remote-Sensing-Deep-Learning/" rel="tag"># Remote Sensing; Deep Learning</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/12/Construction/" rel="prev" title="The Construction of Million-AID Dataset">
+                The Construction of Million-AID Dataset <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -624,14 +499,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -652,8 +528,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -712,6 +597,22 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-global-distribution"><span class="nav-number">2.</span> <span class="nav-text">The global distribution</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-banchmark"><span class="nav-number">3.</span> <span class="nav-text">The banchmark</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -847,6 +748,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
 
   
 
