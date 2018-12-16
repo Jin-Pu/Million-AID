@@ -105,7 +105,7 @@
 
 
   <meta name="description" content="Points dataFor scene categories with small footprints, such as “storage tank”, “wind turbine”, “pool”, etc., coordinate points are generally used to represent geographic location information of these">
-<meta name="keywords" content="Dataset, Remote Sensing, Deep Learning">
+<meta name="keywords" content="Remote Sensing,Dataset,Deep Learning,Multi-source geoinformation">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Construction of Million-AID Dataset">
 <meta property="og:url" content="https://jin-pu.github.io/AIDPlus/2018/12/12/Construction/index.html">
@@ -116,7 +116,7 @@
 <meta property="og:image" content="https://jin-pu.github.io/AIDPlus/images/online_datasets.png">
 <meta property="og:image" content="https://jin-pu.github.io/AIDPlus/images/plane_data_1.png">
 <meta property="og:image" content="https://jin-pu.github.io/AIDPlus/images/line_data_1.png">
-<meta property="og:updated_time" content="2018-12-14T12:24:52.223Z">
+<meta property="og:updated_time" content="2018-12-16T19:29:02.184Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Construction of Million-AID Dataset">
 <meta name="twitter:description" content="Points dataFor scene categories with small footprints, such as “storage tank”, “wind turbine”, “pool”, etc., coordinate points are generally used to represent geographic location information of these">
@@ -243,7 +243,7 @@
         
         
           
-          <li class="menu-item menu-item-about">
+          <li class="menu-item menu-item-category-hierarchy">
 
     
     
@@ -253,7 +253,24 @@
 
     
 
-    <a href="/AIDPlus/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+    <a href="/AIDPlus/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-list-ol"></i> <br>Category Hierarchy</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-experiments">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/AIDPlus/Experiments/" rel="section"><i class="menu-item-icon fa fa-fw fa-bar-chart"></i> <br>Experiments</a>
 
   </li>
         
@@ -271,23 +288,6 @@
     
 
     <a href="/AIDPlus/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/AIDPlus/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
 
   </li>
         
@@ -328,15 +328,6 @@
     </header>
 
     
-  
-  
-  
-  
-
-  
-
-    <a href="https://github.com/Jin-Pu" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" style="fill: #222; color: #fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
-
 
 
     <main id="main" class="main">
@@ -425,7 +416,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-14 13:24:52" itemprop="dateModified" datetime="2018-12-14T13:24:52+01:00">2018-12-14</time>
+                <time title="Modified: 2018-12-16 20:29:02" itemprop="dateModified" datetime="2018-12-16T20:29:02+01:00">2018-12-16</time>
               
             
           </span>
@@ -465,7 +456,7 @@
       
 
       
-        <h3 id="Points-data"><a href="#Points-data" class="headerlink" title="Points data"></a>Points data</h3><p>For scene categories with small footprints, such as “storage tank”, “wind turbine”, “pool”, etc., coordinate points are generally used to represent geographic location information of these scenes, and attached text contains semantic information. By retrieving the semantic information in the attached text, the coordinates of point data matching the retrieval category in a region can be acquired. Thereby the acquisition of the geographic information corresponding to the target category in the region will be completed. For accomplishing the process, we use Google Map Platform to create a JavaScript-based scene coordinates acquirer. The Radar Search API of Google Map Platform is able to search the geo-information labeling database in the area by input semantic information and return the coordinates of the points matching the input information. Based on Radar Search API in Google Map Platform, the scene coordinates acquirer has been created, which can switch the map area to achieve the large-area searching tasks and save the coordinates in a file in real time. The features of the acquirer improve the efficiencies of coordinates acquisitions. Fig.2 shows the coordinates of “baseball field” by red marks. Plenty of scenes coordinates are obtained by the acquirer, such as “baseball field”, “soccer field”, “church”, “tennis court”. </p>
+        <h3 id="Points-data"><a href="#Points-data" class="headerlink" title="Points data"></a>Points data</h3><p>For scene categories with small footprints, such as “storage tank”, “wind turbine”, “pool”, etc., coordinate points are generally used to represent geographic location information of these scenes, and attached text contains semantic information. By retrieving the semantic information in the attached text, the coordinates of point data matching the retrieval category in a region can be acquired. Thereby the acquisition of the geographic information corresponding to the target category in the region will be completed. For accomplishing the process, we use Google Map Platform to create a JavaScript-based scene coordinates acquirer. The Radar Search API of Google Map Platform is able to search the geo-information labeling database in the area by input semantic information and return the coordinates of the points matching the input information. Based on Radar Search API in Google Map Platform, the scene coordinates acquirer has been created, which can switch the map area to achieve the large-area searching tasks and save the coordinates in a file in real time. The features of the acquirer improve the efficiencies of coordinates acquisitions. Fig.2 shows the coordinates of “baseball field” by red marks. Plenty of scenes coordinates are obtained by the acquirer, such as “baseball field”, “soccer field”, “church”, “tennis court”.  geoinformation </p>
 <p><img src="/AIDPlus/images/google_api_1.png" alt="global_distribution2"></p>
 <h3 id="Lines-and-planes-data"><a href="#Lines-and-planes-data" class="headerlink" title="Lines and planes data"></a>Lines and planes data</h3><p>Some scene categories in the category hierarchy, such as business districts, cultivated land, rivers, etc., require an area to represent. A single point is not enough to describe the geometry and position information of these scenes. Lines and faces need to be used to accurately represent this scene information. In order to obtain the line and surface information of the scene category, we use the open map project, OpenStreetMap, to obtain the line and surface information of these scene categories. OpenStreetMap is an open online map project for free editing. OpenStreetMap consists of three elements, node, way, and relation. Node is the basic element that represents the geometric information of the scene. A single Node represents a point in space. It consists of longitude, dimension, and node id. node usually attaches a key, which represents the semantic information of node. Way is an ordered list of nodes, divided into open way, closed way, area, and so on. Each way contains at least one tag, and the tag contains the attachment semantic information of the way. Use way to represent geometric information for multiple scene categories. When using OpenStreetMap to extract the line and surface information of the scene category, we can directly extract the way data. The way data of the desired scene category is extracted by retrieving the semantic information of the tag.</p>
 <p><img src="/AIDPlus/images/online_datasets.png" alt="global_distribution2"></p>
@@ -496,7 +487,13 @@
       
         <div class="post-tags">
           
-            <a href="/AIDPlus/tags/Dataset-Remote-Sensing-Deep-Learning/" rel="tag"># Dataset, Remote Sensing, Deep Learning</a>
+            <a href="/AIDPlus/tags/Remote-Sensing/" rel="tag"># Remote Sensing</a>
+          
+            <a href="/AIDPlus/tags/Dataset/" rel="tag"># Dataset</a>
+          
+            <a href="/AIDPlus/tags/Deep-Learning/" rel="tag"># Deep Learning</a>
+          
+            <a href="/AIDPlus/tags/Multi-source-geoinformation/" rel="tag"># Multi-source geoinformation</a>
           
         </div>
       
@@ -518,10 +515,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/AIDPlus/2018/12/14/categories/" rel="prev" title="categories">
-                categories <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -597,7 +590,7 @@
                 
                   <a href="/AIDPlus/archives">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -609,16 +602,22 @@
                 
                 
                 <div class="site-state-item site-state-tags">
-                  
+                  <a href="/AIDPlus/tags/index.html">
                     
                     
                       
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">tags</span>
-                  
+                  </a>
                 </div>
               
             </nav>
