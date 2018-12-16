@@ -104,30 +104,24 @@
 
 
 
-  <meta name="description" content="Points dataFor scene categories with small footprints, such as “storage tank”, “wind turbine”, “pool”, etc., coordinate points are generally used to represent geographic location information of these">
-<meta name="keywords" content="Dataset, Remote Sensing, Deep Learning">
+  <meta name="description" content="Category I Category II Category III Example      arable land dry field      greenhouse      paddy field    agricultural land  terraced field     grassland heath      lawn      meadow     woodland f">
 <meta property="og:type" content="article">
-<meta property="og:title" content="The Construction of Million-AID Dataset">
-<meta property="og:url" content="https://jin-pu.github.io/AIDPlus/2018/12/12/Construction/index.html">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://jin-pu.github.io/AIDPlus/2018/12/14/categories/index.html">
 <meta property="og:site_name" content="Million-AID">
-<meta property="og:description" content="Points dataFor scene categories with small footprints, such as “storage tank”, “wind turbine”, “pool”, etc., coordinate points are generally used to represent geographic location information of these">
+<meta property="og:description" content="Category I Category II Category III Example      arable land dry field      greenhouse      paddy field    agricultural land  terraced field     grassland heath      lawn      meadow     woodland f">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://jin-pu.github.io/AIDPlus/images/google_api_1.png">
-<meta property="og:image" content="https://jin-pu.github.io/AIDPlus/images/online_datasets.png">
-<meta property="og:image" content="https://jin-pu.github.io/AIDPlus/images/plane_data_1.png">
-<meta property="og:image" content="https://jin-pu.github.io/AIDPlus/images/line_data_1.png">
-<meta property="og:updated_time" content="2018-12-14T12:24:52.223Z">
+<meta property="og:updated_time" content="2018-12-14T12:46:22.970Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Construction of Million-AID Dataset">
-<meta name="twitter:description" content="Points dataFor scene categories with small footprints, such as “storage tank”, “wind turbine”, “pool”, etc., coordinate points are generally used to represent geographic location information of these">
-<meta name="twitter:image" content="https://jin-pu.github.io/AIDPlus/images/google_api_1.png">
+<meta name="twitter:title" content="categories">
+<meta name="twitter:description" content="Category I Category II Category III Example      arable land dry field      greenhouse      paddy field    agricultural land  terraced field     grassland heath      lawn      meadow     woodland f">
 
 
 
 
 
 
-  <link rel="canonical" href="https://jin-pu.github.io/AIDPlus/2018/12/12/Construction/">
+  <link rel="canonical" href="https://jin-pu.github.io/AIDPlus/2018/12/14/categories/">
 
 
 
@@ -137,7 +131,7 @@
   };
 </script>
 
-  <title>The Construction of Million-AID Dataset | Million-AID</title>
+  <title>categories | Million-AID</title>
   
 
 
@@ -277,7 +271,7 @@
         
         
           
-          <li class="menu-item menu-item-categories">
+          <li class="menu-item menu-item-categories menu-item-active">
 
     
     
@@ -365,7 +359,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://jin-pu.github.io/AIDPlus/AIDPlus/2018/12/12/Construction/">
+    <link itemprop="mainEntityOfPage" href="https://jin-pu.github.io/AIDPlus/AIDPlus/2018/12/14/categories/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Pu Jin">
@@ -382,7 +376,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">The Construction of Million-AID Dataset
+          <h1 class="post-title" itemprop="name headline">categories
 
               
             
@@ -408,24 +402,12 @@
                 
               
 
-              <time title="Created: 2018-12-12 16:27:14" itemprop="dateCreated datePublished" datetime="2018-12-12T16:27:14+01:00">2018-12-12</time>
+              <time title="Created: 2018-12-14 13:33:59 / Modified: 13:46:22" itemprop="dateCreated datePublished" datetime="2018-12-14T13:33:59+01:00">2018-12-14</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-12-14 13:24:52" itemprop="dateModified" datetime="2018-12-14T13:24:52+01:00">2018-12-14</time>
               
             
           </span>
@@ -439,8 +421,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/AIDPlus/2018/12/12/Construction/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count gitment-comments-count" data-xid="/AIDPlus/2018/12/12/Construction/" itemprop="commentsCount"></span>
+                <a href="/AIDPlus/2018/12/14/categories/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count gitment-comments-count" data-xid="/AIDPlus/2018/12/14/categories/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -475,14 +457,377 @@
       
 
       
-        <h3 id="Points-data"><a href="#Points-data" class="headerlink" title="Points data"></a>Points data</h3><p>For scene categories with small footprints, such as “storage tank”, “wind turbine”, “pool”, etc., coordinate points are generally used to represent geographic location information of these scenes, and attached text contains semantic information. By retrieving the semantic information in the attached text, the coordinates of point data matching the retrieval category in a region can be acquired. Thereby the acquisition of the geographic information corresponding to the target category in the region will be completed. For accomplishing the process, we use Google Map Platform to create a JavaScript-based scene coordinates acquirer. The Radar Search API of Google Map Platform is able to search the geo-information labeling database in the area by input semantic information and return the coordinates of the points matching the input information. Based on Radar Search API in Google Map Platform, the scene coordinates acquirer has been created, which can switch the map area to achieve the large-area searching tasks and save the coordinates in a file in real time. The features of the acquirer improve the efficiencies of coordinates acquisitions. Fig.2 shows the coordinates of “baseball field” by red marks. Plenty of scenes coordinates are obtained by the acquirer, such as “baseball field”, “soccer field”, “church”, “tennis court”. </p>
-<p><img src="/AIDPlus/images/google_api_1.png" alt="global_distribution2"></p>
-<h3 id="Lines-and-planes-data"><a href="#Lines-and-planes-data" class="headerlink" title="Lines and planes data"></a>Lines and planes data</h3><p>Some scene categories in the category hierarchy, such as business districts, cultivated land, rivers, etc., require an area to represent. A single point is not enough to describe the geometry and position information of these scenes. Lines and faces need to be used to accurately represent this scene information. In order to obtain the line and surface information of the scene category, we use the open map project, OpenStreetMap, to obtain the line and surface information of these scene categories. OpenStreetMap is an open online map project for free editing. OpenStreetMap consists of three elements, node, way, and relation. Node is the basic element that represents the geometric information of the scene. A single Node represents a point in space. It consists of longitude, dimension, and node id. node usually attaches a key, which represents the semantic information of node. Way is an ordered list of nodes, divided into open way, closed way, area, and so on. Each way contains at least one tag, and the tag contains the attachment semantic information of the way. Use way to represent geometric information for multiple scene categories. When using OpenStreetMap to extract the line and surface information of the scene category, we can directly extract the way data. The way data of the desired scene category is extracted by retrieving the semantic information of the tag.</p>
-<p><img src="/AIDPlus/images/online_datasets.png" alt="global_distribution2"></p>
-<p>OpenStreetMap provides a data retrieval tool Osmosis. Use Osmosis to retrieve tag information and extract matching way data. Figure 4 shows the way data of a “commercial area” extracted from OpenStreetMap data (the way data is converted to KML data displayed in Google Earth), and Figure 5 shows the extracted “river” way data of the Yangtze River basin. It can be seen from the figure that the extracted way data information can be matched with the real remote sensing image, and the labeling accuracy is high and has great value.</p>
-<p><img src="/AIDPlus/images/plane_data_1.png" alt="global_distribution2"></p>
-<p>OpenStreetMap contains a large amount of data, a wide coverage, and relatively high precision. The tag information in OpenStreetMap is rich and varied, covering a large number of scenes of human production and life, and covering most scene categories in the category hierarchy. Thousands of way information can be obtained by using a data retrieval tool. This information is of great help to the acquisition of scene images. and position information. </p>
-<p><img src="/AIDPlus/images/line_data_1.png" alt="global_distribution2"></p>
+        <table>
+<thead>
+<tr>
+<th style="text-align:center">Category I</th>
+<th style="text-align:center">Category II</th>
+<th style="text-align:center">Category III</th>
+<th style="text-align:center">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">arable land</td>
+<td style="text-align:center">dry field</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">greenhouse</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">paddy field</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">agricultural land</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">terraced field</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">grassland</td>
+<td style="text-align:center">heath</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">lawn</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">meadow</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">woodland</td>
+<td style="text-align:center">forest</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">orchard</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">commercial land</td>
+<td style="text-align:center">commercial area</td>
+<td style="text-align:center">commercial area</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">factory area</td>
+<td style="text-align:center">storage tank</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">wastewater tank</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">works</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">mining area</td>
+<td style="text-align:center">mine</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">industrial land</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">oil field</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">quarry</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">power station</td>
+<td style="text-align:center">solar power plant</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">wind turbine</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">leisure land</td>
+<td style="text-align:center">park</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">swimming pool</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">religious land</td>
+<td style="text-align:center">church</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">special land</td>
+<td style="text-align:center">cemetery</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">museum</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">sports land</td>
+<td style="text-align:center">baseball field</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">basketball court</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">golf course</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">soccer field</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">stadium</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">tennis court</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">residential land</td>
+<td style="text-align:center">detached house</td>
+<td style="text-align:center">detached house</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">single house</td>
+<td style="text-align:center">single house</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">sparse house</td>
+<td style="text-align:center">sparse house</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">terrace</td>
+<td style="text-align:center">terrace</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">transportation land</td>
+<td style="text-align:center">airport area</td>
+<td style="text-align:center">apron</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">helipad</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">runway</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">highway area</td>
+<td style="text-align:center">bridge</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">parking lot</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">road</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">roadside parking lot</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">port area</td>
+<td style="text-align:center">roundabout</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">viaduct</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">pier</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">port</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">railway</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">train station</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">unutilized land</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">bareland</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">brownfield</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">desert</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ice land</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">island</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">mountain</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">rock land</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">sparse shrub land</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">water area</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">beach</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">lake</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">river</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -504,12 +849,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/AIDPlus/tags/Dataset-Remote-Sensing-Deep-Learning/" rel="tag"># Dataset, Remote Sensing, Deep Learning</a>
-          
-        </div>
-      
 
       
       
@@ -519,8 +858,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/AIDPlus/2018/12/12/Million-AID/" rel="next" title="Million-AID">
-                <i class="fa fa-chevron-left"></i> Million-AID
+              <a href="/AIDPlus/2018/12/12/Construction/" rel="next" title="The Construction of Million-AID Dataset">
+                <i class="fa fa-chevron-left"></i> The Construction of Million-AID Dataset
               </a>
             
           </div>
@@ -528,10 +867,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/AIDPlus/2018/12/14/categories/" rel="prev" title="categories">
-                categories <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -583,17 +918,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -680,22 +1006,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Points-data"><span class="nav-number">1.</span> <span class="nav-text">Points data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lines-and-planes-data"><span class="nav-number">2.</span> <span class="nav-text">Lines and planes data</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
